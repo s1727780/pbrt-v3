@@ -91,6 +91,7 @@
 #include "shapes/curve.h"
 #include "shapes/cylinder.h"
 #include "shapes/disk.h"
+#include "shapes/displacedsphere.h"
 #include "shapes/heightfield.h"
 #include "shapes/hyperboloid.h"
 #include "shapes/loopsubdiv.h"

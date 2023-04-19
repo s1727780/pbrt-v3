@@ -31,7 +31,7 @@
  */
 
 
-// shapes/sphere.cpp*
+// shapes/displacedsphere.cpp*
 #include "shapes/displacedsphere.h"
 #include "sampling.h"
 #include "paramset.h"
@@ -323,7 +323,7 @@ Float DispSphere::SolidAngle(const Point3f &p, int nSamples) const {
     return (2 * Pi * (1 - cosTheta));
 }
 
-std::shared_ptr<Shape> CreateSphereShape(const Transform *o2w,
+std::shared_ptr<Shape> CreateDisplacedSphereShape(const Transform *o2w,
                                          const Transform *w2o,
                                          bool reverseOrientation,
                                          const ParamSet &params) {

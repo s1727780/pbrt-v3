@@ -1,0 +1,1485 @@
+The system is: Linux - 4.4.0-22621-Microsoft - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd120/fast && /usr/bin/make -f CMakeFiles/cmTC_dd120.dir/build.make CMakeFiles/cmTC_dd120.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd120.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dd120.dir/testCCompiler.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_dd120
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd120.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dd120.dir/testCCompiler.c.o  -o cmTC_dd120 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ca621/fast && /usr/bin/make -f CMakeFiles/cmTC_ca621.dir/build.make CMakeFiles/cmTC_ca621.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS6jwmW.s
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o /tmp/ccS6jwmW.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_ca621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca621.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o  -o cmTC_ca621 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca621' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIfwBfq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ca621 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca621' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_ca621/fast && /usr/bin/make -f CMakeFiles/cmTC_ca621.dir/build.make CMakeFiles/cmTC_ca621.dir/build]
+  ignore line: [make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS6jwmW.s]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o /tmp/ccS6jwmW.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_ca621]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca621.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o  -o cmTC_ca621 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca621' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIfwBfq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ca621 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccIfwBfq.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ca621] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_ca621.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_768e3/fast && /usr/bin/make -f CMakeFiles/cmTC_768e3.dir/build.make CMakeFiles/cmTC_768e3.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_768e3.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_768e3.dir/testCXXCompiler.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_768e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_768e3.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_768e3.dir/testCXXCompiler.cxx.o  -o cmTC_768e3 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d4cd/fast && /usr/bin/make -f CMakeFiles/cmTC_7d4cd.dir/build.make CMakeFiles/cmTC_7d4cd.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cctZSflU.s
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cctZSflU.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_7d4cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d4cd.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d4cd 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d4cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccofAfmn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d4cd /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d4cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_7d4cd/fast && /usr/bin/make -f CMakeFiles/cmTC_7d4cd.dir/build.make CMakeFiles/cmTC_7d4cd.dir/build]
+  ignore line: [make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cctZSflU.s]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cctZSflU.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_7d4cd]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d4cd.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7d4cd ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d4cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccofAfmn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d4cd /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccofAfmn.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7d4cd] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_7d4cd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd11b/fast && /usr/bin/make -f CMakeFiles/cmTC_dd11b.dir/build.make CMakeFiles/cmTC_dd11b.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd11b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dd11b.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dd11b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd11b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dd11b.dir/CheckIncludeFile.c.o  -o cmTC_dd11b 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5936/fast && /usr/bin/make -f CMakeFiles/cmTC_d5936.dir/build.make CMakeFiles/cmTC_d5936.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5936.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d5936.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5936
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5936.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d5936.dir/CheckFunctionExists.c.o  -o cmTC_d5936  -lpthread 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files alloca.h exist passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a16d8/fast && /usr/bin/make -f CMakeFiles/cmTC_a16d8.dir/build.make CMakeFiles/cmTC_a16d8.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a16d8.dir/HAVE_ALLOCA_H.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a16d8.dir/HAVE_ALLOCA_H.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CheckIncludeFiles/HAVE_ALLOCA_H.c
+Linking C executable cmTC_a16d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a16d8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a16d8.dir/HAVE_ALLOCA_H.c.o  -o cmTC_a16d8 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f7127/fast && /usr/bin/make -f CMakeFiles/cmTC_f7127.dir/build.make CMakeFiles/cmTC_f7127.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7127.dir/HAVE_MEMORY_H.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f7127.dir/HAVE_MEMORY_H.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CheckIncludeFiles/HAVE_MEMORY_H.c
+Linking C executable cmTC_f7127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7127.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f7127.dir/HAVE_MEMORY_H.c.o  -o cmTC_f7127 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_HEX_FP_CONSTANTS succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2b811/fast && /usr/bin/make -f CMakeFiles/cmTC_2b811.dir/build.make CMakeFiles/cmTC_2b811.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b811.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_HEX_FP_CONSTANTS   -o CMakeFiles/cmTC_2b811.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2b811
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b811.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_HEX_FP_CONSTANTS    -rdynamic CMakeFiles/cmTC_2b811.dir/src.cxx.o  -o cmTC_2b811 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { float x = 0x1p-32f; }
+Performing C++ SOURCE FILE Test HAVE_BINARY_CONSTANTS succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6b73/fast && /usr/bin/make -f CMakeFiles/cmTC_e6b73.dir/build.make CMakeFiles/cmTC_e6b73.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e6b73.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_BINARY_CONSTANTS   -o CMakeFiles/cmTC_e6b73.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e6b73
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6b73.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_BINARY_CONSTANTS    -rdynamic CMakeFiles/cmTC_e6b73.dir/src.cxx.o  -o cmTC_e6b73 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int x = 0b101011; }
+Performing C++ SOURCE FILE Test HAVE_CONSTEXPR succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_11c11/fast && /usr/bin/make -f CMakeFiles/cmTC_11c11.dir/build.make CMakeFiles/cmTC_11c11.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11c11.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_CONSTEXPR   -o CMakeFiles/cmTC_11c11.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_11c11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11c11.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_CONSTEXPR    -rdynamic CMakeFiles/cmTC_11c11.dir/src.cxx.o  -o cmTC_11c11 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { constexpr int x = 0; }
+Performing C++ SOURCE FILE Test HAVE_ALIGNAS succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_807c0/fast && /usr/bin/make -f CMakeFiles/cmTC_807c0.dir/build.make CMakeFiles/cmTC_807c0.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_807c0.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNAS   -o CMakeFiles/cmTC_807c0.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_807c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_807c0.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNAS    -rdynamic CMakeFiles/cmTC_807c0.dir/src.cxx.o  -o cmTC_807c0 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+struct alignas(32) Foo { char x; }; int main() { }
+Performing C++ SOURCE FILE Test HAVE_ALIGNOF succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1507a/fast && /usr/bin/make -f CMakeFiles/cmTC_1507a.dir/build.make CMakeFiles/cmTC_1507a.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1507a.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNOF   -o CMakeFiles/cmTC_1507a.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1507a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1507a.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNOF    -rdynamic CMakeFiles/cmTC_1507a.dir/src.cxx.o  -o cmTC_1507a 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int x = alignof(double); }
+Performing C++ SOURCE FILE Test HAVE_NONPOD_IN_UNIONS succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af132/fast && /usr/bin/make -f CMakeFiles/cmTC_af132.dir/build.make CMakeFiles/cmTC_af132.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_af132.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NONPOD_IN_UNIONS   -o CMakeFiles/cmTC_af132.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_af132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af132.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NONPOD_IN_UNIONS    -rdynamic CMakeFiles/cmTC_af132.dir/src.cxx.o  -o cmTC_af132 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+class Bar { public: Bar() { x = 0; } float x; };
+struct Foo { union { int x[10]; Bar b; }; Foo() : b() { } };
+int main() { Foo f; }
+
+Performing C++ SOURCE FILE Test HAVE_MMAP succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a3ae2/fast && /usr/bin/make -f CMakeFiles/cmTC_a3ae2.dir/build.make CMakeFiles/cmTC_a3ae2.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3ae2.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_MMAP   -o CMakeFiles/cmTC_a3ae2.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a3ae2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3ae2.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_MMAP    -rdynamic CMakeFiles/cmTC_a3ae2.dir/src.cxx.o  -o cmTC_a3ae2 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+int main() {
+   int fd = open("foo", O_RDONLY);
+   struct stat s;
+   fstat(fd, &s);
+   size_t len = s.st_size;
+   void *ptr = mmap(0, len, PROT_READ, MAP_FILE | MAP_SHARED, fd, 0);
+   munmap(ptr, len);   
+}
+
+Performing C++ SOURCE FILE Test HAVE_ATTRIBUTE_NOINLINE succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8580c/fast && /usr/bin/make -f CMakeFiles/cmTC_8580c.dir/build.make CMakeFiles/cmTC_8580c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8580c.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ATTRIBUTE_NOINLINE   -o CMakeFiles/cmTC_8580c.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8580c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8580c.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ATTRIBUTE_NOINLINE    -rdynamic CMakeFiles/cmTC_8580c.dir/src.cxx.o  -o cmTC_8580c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((noinline)) void foo() { }
+int main() { }
+Performing C++ SOURCE FILE Test HAVE_POSIX_MEMALIGN succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cef55/fast && /usr/bin/make -f CMakeFiles/cmTC_cef55.dir/build.make CMakeFiles/cmTC_cef55.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cef55.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_POSIX_MEMALIGN   -o CMakeFiles/cmTC_cef55.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cef55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef55.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_POSIX_MEMALIGN    -rdynamic CMakeFiles/cmTC_cef55.dir/src.cxx.o  -o cmTC_cef55 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <stdlib.h>
+int main() {
+  void *ptr;
+  posix_memalign(&ptr, 32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_MEMALIGN succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83a12/fast && /usr/bin/make -f CMakeFiles/cmTC_83a12.dir/build.make CMakeFiles/cmTC_83a12.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_83a12.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_MEMALIGN   -o CMakeFiles/cmTC_83a12.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_83a12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83a12.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_MEMALIGN    -rdynamic CMakeFiles/cmTC_83a12.dir/src.cxx.o  -o cmTC_83a12 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <malloc.h>
+int main() {
+    void *ptr = memalign(32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_THREAD_LOCAL succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42f4c/fast && /usr/bin/make -f CMakeFiles/cmTC_42f4c.dir/build.make CMakeFiles/cmTC_42f4c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42f4c.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_THREAD_LOCAL   -o CMakeFiles/cmTC_42f4c.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_42f4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42f4c.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_THREAD_LOCAL    -rdynamic CMakeFiles/cmTC_42f4c.dir/src.cxx.o  -o cmTC_42f4c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#ifdef __CYGWIN__
+// Hack to work around https://gcc.gnu.org/bugzilla/show_bug.cgi?id=64697
+#error "No thread_local on cygwin"
+#endif  // __CYGWIN__
+thread_local int x; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aaffc/fast && /usr/bin/make -f CMakeFiles/cmTC_aaffc.dir/build.make CMakeFiles/cmTC_aaffc.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aaffc.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE___THREAD   -o CMakeFiles/cmTC_aaffc.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_aaffc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaffc.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE___THREAD    -rdynamic CMakeFiles/cmTC_aaffc.dir/src.cxx.o  -o cmTC_aaffc 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+__thread int x; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8725c/fast && /usr/bin/make -f CMakeFiles/cmTC_8725c.dir/build.make CMakeFiles/cmTC_8725c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8725c.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_GCC_INLINE_ASM_AVX   -o CMakeFiles/cmTC_8725c.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8725c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8725c.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_GCC_INLINE_ASM_AVX    -rdynamic CMakeFiles/cmTC_8725c.dir/src.cxx.o  -o cmTC_8725c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main()
+	{
+	 #if defined(__GNUC__) && defined(__SSE2__)
+		 int n   = 0;
+		 int eax = 0;
+		 int edx = 0;
+		 __asm__(
+			 "xgetbv     ;"
+			 "vzeroupper  "
+			 : "=a"(eax), "=d"(edx) : "c"(n) : );
+	 #else
+		 #error No GCC style inline asm supported for AVX instructions
+	 #endif
+	}
+	
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c7484/fast && /usr/bin/make -f CMakeFiles/cmTC_c7484.dir/build.make CMakeFiles/cmTC_c7484.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c7484.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_SYSCONF_NPROCESSORS_ONLN   -o CMakeFiles/cmTC_c7484.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c7484
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7484.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_SYSCONF_NPROCESSORS_ONLN    -rdynamic CMakeFiles/cmTC_c7484.dir/src.cxx.o  -o cmTC_c7484 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_629cd/fast && /usr/bin/make -f CMakeFiles/cmTC_629cd.dir/build.make CMakeFiles/cmTC_629cd.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_629cd.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_629cd.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_629cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_629cd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_629cd.dir/CheckIncludeFile.c.o  -o cmTC_629cd 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5dfdb/fast && /usr/bin/make -f CMakeFiles/cmTC_5dfdb.dir/build.make CMakeFiles/cmTC_5dfdb.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5dfdb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5dfdb.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5dfdb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dfdb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5dfdb.dir/CheckIncludeFile.c.o  -o cmTC_5dfdb 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file glob.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4a367/fast && /usr/bin/make -f CMakeFiles/cmTC_4a367.dir/build.make CMakeFiles/cmTC_4a367.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a367.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4a367.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4a367
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a367.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4a367.dir/CheckIncludeFile.c.o  -o cmTC_4a367 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_70e19/fast && /usr/bin/make -f CMakeFiles/cmTC_70e19.dir/build.make CMakeFiles/cmTC_70e19.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70e19.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_70e19.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_70e19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e19.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_70e19.dir/CheckIncludeFile.c.o  -o cmTC_70e19 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_45232/fast && /usr/bin/make -f CMakeFiles/cmTC_45232.dir/build.make CMakeFiles/cmTC_45232.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45232.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_45232.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_45232
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45232.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_45232.dir/CheckIncludeFile.c.o  -o cmTC_45232 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f6642/fast && /usr/bin/make -f CMakeFiles/cmTC_f6642.dir/build.make CMakeFiles/cmTC_f6642.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6642.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f6642.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f6642
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6642.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f6642.dir/CheckIncludeFile.c.o  -o cmTC_f6642 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_edfb6/fast && /usr/bin/make -f CMakeFiles/cmTC_edfb6.dir/build.make CMakeFiles/cmTC_edfb6.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edfb6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_edfb6.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_edfb6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edfb6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_edfb6.dir/CheckIncludeFile.c.o  -o cmTC_edfb6 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1dd2/fast && /usr/bin/make -f CMakeFiles/cmTC_f1dd2.dir/build.make CMakeFiles/cmTC_f1dd2.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1dd2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f1dd2.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f1dd2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1dd2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f1dd2.dir/CheckIncludeFile.c.o  -o cmTC_f1dd2 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_50010/fast && /usr/bin/make -f CMakeFiles/cmTC_50010.dir/build.make CMakeFiles/cmTC_50010.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50010.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_50010.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_50010
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50010.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_50010.dir/CheckIncludeFile.c.o  -o cmTC_50010 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2021e/fast && /usr/bin/make -f CMakeFiles/cmTC_2021e.dir/build.make CMakeFiles/cmTC_2021e.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2021e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2021e.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2021e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2021e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2021e.dir/CheckIncludeFile.c.o  -o cmTC_2021e 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/syscall.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7600d/fast && /usr/bin/make -f CMakeFiles/cmTC_7600d.dir/build.make CMakeFiles/cmTC_7600d.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7600d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7600d.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7600d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7600d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7600d.dir/CheckIncludeFile.c.o  -o cmTC_7600d 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a36c7/fast && /usr/bin/make -f CMakeFiles/cmTC_a36c7.dir/build.make CMakeFiles/cmTC_a36c7.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a36c7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a36c7.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a36c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a36c7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a36c7.dir/CheckIncludeFile.c.o  -o cmTC_a36c7 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd876/fast && /usr/bin/make -f CMakeFiles/cmTC_bd876.dir/build.make CMakeFiles/cmTC_bd876.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd876.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bd876.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bd876
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd876.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bd876.dir/CheckIncludeFile.c.o  -o cmTC_bd876 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/utsname.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_27241/fast && /usr/bin/make -f CMakeFiles/cmTC_27241.dir/build.make CMakeFiles/cmTC_27241.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27241.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_27241.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_27241
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27241.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_27241.dir/CheckIncludeFile.c.o  -o cmTC_27241 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syscall.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1ce91/fast && /usr/bin/make -f CMakeFiles/cmTC_1ce91.dir/build.make CMakeFiles/cmTC_1ce91.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ce91.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1ce91.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1ce91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ce91.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1ce91.dir/CheckIncludeFile.c.o  -o cmTC_1ce91 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f2527/fast && /usr/bin/make -f CMakeFiles/cmTC_f2527.dir/build.make CMakeFiles/cmTC_f2527.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2527.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f2527.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f2527
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2527.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f2527.dir/CheckIncludeFile.c.o  -o cmTC_f2527 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ucontext.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d7d2c/fast && /usr/bin/make -f CMakeFiles/cmTC_d7d2c.dir/build.make CMakeFiles/cmTC_d7d2c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7d2c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d7d2c.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d7d2c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7d2c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d7d2c.dir/CheckIncludeFile.c.o  -o cmTC_d7d2c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba0fe/fast && /usr/bin/make -f CMakeFiles/cmTC_ba0fe.dir/build.make CMakeFiles/cmTC_ba0fe.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba0fe.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ba0fe.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ba0fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba0fe.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ba0fe.dir/CheckIncludeFile.c.o  -o cmTC_ba0fe 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unwind.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_af827/fast && /usr/bin/make -f CMakeFiles/cmTC_af827.dir/build.make CMakeFiles/cmTC_af827.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af827.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_af827.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_af827
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af827.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_af827.dir/CheckIncludeFile.c.o  -o cmTC_af827 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/hash_map exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e58e1/fast && /usr/bin/make -f CMakeFiles/cmTC_e58e1.dir/build.make CMakeFiles/cmTC_e58e1.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e58e1.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_e58e1.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/9/ext/hash_map:60,
+                 from /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/9/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+Linking CXX executable cmTC_e58e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e58e1.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_e58e1.dir/CheckIncludeFile.cxx.o  -o cmTC_e58e1 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/hash_set exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bb668/fast && /usr/bin/make -f CMakeFiles/cmTC_bb668.dir/build.make CMakeFiles/cmTC_bb668.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bb668.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_bb668.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/9/ext/hash_set:60,
+                 from /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/9/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+Linking CXX executable cmTC_bb668
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb668.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_bb668.dir/CheckIncludeFile.cxx.o  -o cmTC_bb668 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ext/slist exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d3660/fast && /usr/bin/make -f CMakeFiles/cmTC_d3660.dir/build.make CMakeFiles/cmTC_d3660.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d3660.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_d3660.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_d3660
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3660.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_d3660.dir/CheckIncludeFile.cxx.o  -o cmTC_d3660 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file tr1/unordered_map exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_01c67/fast && /usr/bin/make -f CMakeFiles/cmTC_01c67.dir/build.make CMakeFiles/cmTC_01c67.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_01c67.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_01c67.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_01c67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c67.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_01c67.dir/CheckIncludeFile.cxx.o  -o cmTC_01c67 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file tr1/unordered_set exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4a104/fast && /usr/bin/make -f CMakeFiles/cmTC_4a104.dir/build.make CMakeFiles/cmTC_4a104.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a104.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_4a104.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_4a104
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a104.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_4a104.dir/CheckIncludeFile.cxx.o  -o cmTC_4a104 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unordered_map exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e9aa/fast && /usr/bin/make -f CMakeFiles/cmTC_5e9aa.dir/build.make CMakeFiles/cmTC_5e9aa.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e9aa.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_5e9aa.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_5e9aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e9aa.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_5e9aa.dir/CheckIncludeFile.cxx.o  -o cmTC_5e9aa 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unordered_set exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_da3e0/fast && /usr/bin/make -f CMakeFiles/cmTC_da3e0.dir/build.make CMakeFiles/cmTC_da3e0.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_da3e0.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_da3e0.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_da3e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da3e0.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_da3e0.dir/CheckIncludeFile.cxx.o  -o cmTC_da3e0 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7cc2a/fast && /usr/bin/make -f CMakeFiles/cmTC_7cc2a.dir/build.make CMakeFiles/cmTC_7cc2a.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7cc2a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7cc2a.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7cc2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cc2a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7cc2a.dir/CheckIncludeFile.c.o  -o cmTC_7cc2a 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of u_int16_t passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fdb1c/fast && /usr/bin/make -f CMakeFiles/cmTC_fdb1c.dir/build.make CMakeFiles/cmTC_fdb1c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fdb1c.dir/HAVE_U_INT16_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fdb1c.dir/HAVE_U_INT16_T.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CheckTypeSize/HAVE_U_INT16_T.c
+Linking C executable cmTC_fdb1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdb1c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fdb1c.dir/HAVE_U_INT16_T.c.o  -o cmTC_fdb1c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef909/fast && /usr/bin/make -f CMakeFiles/cmTC_ef909.dir/build.make CMakeFiles/cmTC_ef909.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef909.dir/HAVE_UINT16_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ef909.dir/HAVE_UINT16_T.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CheckTypeSize/HAVE_UINT16_T.c
+Linking C executable cmTC_ef909
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef909.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ef909.dir/HAVE_UINT16_T.c.o  -o cmTC_ef909 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_19470/fast && /usr/bin/make -f CMakeFiles/cmTC_19470.dir/build.make CMakeFiles/cmTC_19470.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19470.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fcntl   -o CMakeFiles/cmTC_19470.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_19470
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19470.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fcntl    -rdynamic CMakeFiles/cmTC_19470.dir/CheckFunctionExists.c.o  -o cmTC_19470 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pread exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3fd43/fast && /usr/bin/make -f CMakeFiles/cmTC_3fd43.dir/build.make CMakeFiles/cmTC_3fd43.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fd43.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pread   -o CMakeFiles/cmTC_3fd43.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3fd43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fd43.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pread    -rdynamic CMakeFiles/cmTC_3fd43.dir/CheckFunctionExists.c.o  -o cmTC_3fd43 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pwrite exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cf68b/fast && /usr/bin/make -f CMakeFiles/cmTC_cf68b.dir/build.make CMakeFiles/cmTC_cf68b.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf68b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pwrite   -o CMakeFiles/cmTC_cf68b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf68b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf68b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pwrite    -rdynamic CMakeFiles/cmTC_cf68b.dir/CheckFunctionExists.c.o  -o cmTC_cf68b 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc162/fast && /usr/bin/make -f CMakeFiles/cmTC_dc162.dir/build.make CMakeFiles/cmTC_dc162.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc162.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sigaction   -o CMakeFiles/cmTC_dc162.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dc162
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc162.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sigaction    -rdynamic CMakeFiles/cmTC_dc162.dir/CheckFunctionExists.c.o  -o cmTC_dc162 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaltstack exists passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a16c/fast && /usr/bin/make -f CMakeFiles/cmTC_7a16c.dir/build.make CMakeFiles/cmTC_7a16c.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a16c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sigaltstack   -o CMakeFiles/cmTC_7a16c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7a16c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a16c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sigaltstack    -rdynamic CMakeFiles/cmTC_7a16c.dir/CheckFunctionExists.c.o  -o cmTC_7a16c 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_DEPRECATED succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e13e7/fast && /usr/bin/make -f CMakeFiles/cmTC_e13e7.dir/build.make CMakeFiles/cmTC_e13e7.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e13e7.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NO_DEPRECATED   -Wno-deprecated -o CMakeFiles/cmTC_e13e7.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e13e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e13e7.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NO_DEPRECATED    -rdynamic CMakeFiles/cmTC_e13e7.dir/src.cxx.o  -o cmTC_e13e7 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d4153/fast && /usr/bin/make -f CMakeFiles/cmTC_d4153.dir/build.make CMakeFiles/cmTC_d4153.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d4153.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS   -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_d4153.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d4153
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4153.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS    -rdynamic CMakeFiles/cmTC_d4153.dir/src.cxx.o  -o cmTC_d4153 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Determining if the snprintf exist passed with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ad4cc/fast && /usr/bin/make -f CMakeFiles/cmTC_ad4cc.dir/build.make CMakeFiles/cmTC_ad4cc.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad4cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ad4cc.dir/CheckSymbolExists.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ad4cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad4cc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ad4cc.dir/CheckSymbolExists.c.o  -o cmTC_ad4cc 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+File /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__ succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f14f/fast && /usr/bin/make -f CMakeFiles/cmTC_8f14f.dir/build.make CMakeFiles/cmTC_8f14f.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f14f.dir/src.c.o
+/usr/bin/cc   -DHAVE___ATTRIBUTE__   -o CMakeFiles/cmTC_8f14f.dir/src.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8f14f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f14f.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___ATTRIBUTE__    -rdynamic CMakeFiles/cmTC_8f14f.dir/src.c.o  -o cmTC_8f14f 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((unused));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_DEFAULT succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ac7b3/fast && /usr/bin/make -f CMakeFiles/cmTC_ac7b3.dir/build.make CMakeFiles/cmTC_ac7b3.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac7b3.dir/src.c.o
+/usr/bin/cc   -DHAVE___ATTRIBUTE__VISIBILITY_DEFAULT   -o CMakeFiles/cmTC_ac7b3.dir/src.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c:3:1: warning: ‘visibility’ attribute ignored [-Wattributes]
+    3 | static void foo(void) __attribute__ ((visibility("default")));
+      | ^~~~~~
+Linking C executable cmTC_ac7b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac7b3.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___ATTRIBUTE__VISIBILITY_DEFAULT    -rdynamic CMakeFiles/cmTC_ac7b3.dir/src.c.o  -o cmTC_ac7b3 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("default")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24bba/fast && /usr/bin/make -f CMakeFiles/cmTC_24bba.dir/build.make CMakeFiles/cmTC_24bba.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24bba.dir/src.c.o
+/usr/bin/cc   -DHAVE___ATTRIBUTE__VISIBILITY_HIDDEN   -o CMakeFiles/cmTC_24bba.dir/src.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c
+/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c:3:1: warning: ‘visibility’ attribute ignored [-Wattributes]
+    3 | static void foo(void) __attribute__ ((visibility("hidden")));
+      | ^~~~~~
+Linking C executable cmTC_24bba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24bba.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___ATTRIBUTE__VISIBILITY_HIDDEN    -rdynamic CMakeFiles/cmTC_24bba.dir/src.c.o  -o cmTC_24bba 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("hidden")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___BUILTIN_EXPECT succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_90173/fast && /usr/bin/make -f CMakeFiles/cmTC_90173.dir/build.make CMakeFiles/cmTC_90173.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90173.dir/src.c.o
+/usr/bin/cc   -DHAVE___BUILTIN_EXPECT   -o CMakeFiles/cmTC_90173.dir/src.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_90173
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90173.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___BUILTIN_EXPECT    -rdynamic CMakeFiles/cmTC_90173.dir/src.c.o  -o cmTC_90173 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+int main(void) { if (__builtin_expect(0, 0)) return 1; return 0; }
+
+Performing C SOURCE FILE Test HAVE___SYNC_VAL_COMPARE_AND_SWAP succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13aa4/fast && /usr/bin/make -f CMakeFiles/cmTC_13aa4.dir/build.make CMakeFiles/cmTC_13aa4.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13aa4.dir/src.c.o
+/usr/bin/cc   -DHAVE___SYNC_VAL_COMPARE_AND_SWAP   -o CMakeFiles/cmTC_13aa4.dir/src.c.o   -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_13aa4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13aa4.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___SYNC_VAL_COMPARE_AND_SWAP    -rdynamic CMakeFiles/cmTC_13aa4.dir/src.c.o  -o cmTC_13aa4 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+int main(void)
+{
+  int a; if (__sync_val_compare_and_swap(&a, 0, 1)) return 1; return 0;
+}
+
+Performing C++ SOURCE FILE Test STL_STD_NAMESPACE succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_58d06/fast && /usr/bin/make -f CMakeFiles/cmTC_58d06.dir/build.make CMakeFiles/cmTC_58d06.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_58d06.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DSTL_STD_NAMESPACE   -o CMakeFiles/cmTC_58d06.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_58d06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58d06.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DSTL_STD_NAMESPACE    -rdynamic CMakeFiles/cmTC_58d06.dir/src.cxx.o  -o cmTC_58d06 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <vector>
+std::vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_USING_OPERATOR succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f07dd/fast && /usr/bin/make -f CMakeFiles/cmTC_f07dd.dir/build.make CMakeFiles/cmTC_f07dd.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f07dd.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_USING_OPERATOR   -o CMakeFiles/cmTC_f07dd.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f07dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f07dd.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_USING_OPERATOR    -rdynamic CMakeFiles/cmTC_f07dd.dir/src.cxx.o  -o cmTC_f07dd 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <iostream>
+std::ostream& operator<<(std::ostream&, struct s);
+using ::operator<<;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_NAMESPACES succeeded with the following output:
+Change Dir: /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8a8a/fast && /usr/bin/make -f CMakeFiles/cmTC_e8a8a.dir/build.make CMakeFiles/cmTC_e8a8a.dir/build
+make[1]: Entering directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e8a8a.dir/src.cxx.o
+/usr/bin/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NAMESPACES   -o CMakeFiles/cmTC_e8a8a.dir/src.cxx.o -c /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e8a8a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8a8a.dir/link.txt --verbose=1
+/usr/bin/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NAMESPACES    -rdynamic CMakeFiles/cmTC_e8a8a.dir/src.cxx.o  -o cmTC_e8a8a 
+make[1]: Leaving directory '/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+namespace Outer { namespace Inner { int i = 0; }}
+using namespace Outer::Inner;;
+int main() { return i; }
+
