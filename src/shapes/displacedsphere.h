@@ -35,10 +35,10 @@
 #pragma once
 #endif
 
-#ifndef PBRT_SHAPES_DISP_SPHERE_H
-#define PBRT_SHAPES_DISP_SPHERE_H
+#ifndef PBRT_SHAPES_DSPHERE_H
+#define PBRT_SHAPES_DSPHERE_H
 
-// shapes/displacedsphere.h*
+// shapes/sphere.h*
 #include "shape.h"
 
 namespace pbrt {
@@ -75,11 +75,11 @@ class DispSphere : public Shape {
     const Float thetaMin, thetaMax, phiMax;
 };
 
-std::shared_ptr<Shape> CreateDisplacedSphereShape(const Transform *o2w,
+std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
                                          const Transform *w2o,
                                          bool reverseOrientation,
                                          const ParamSet &params);
 
 }  // namespace pbrt
 
-#endif  // PBRT_SHAPES_DISP_SPHERE_H
+#endif  // PBRT_SHAPES_DSPHERE_H

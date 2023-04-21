@@ -6,7 +6,7 @@ Camera "perspective" "float fov" 45
 Film "image" "string filename" "shapeshifter.png" 
     " integer xresolution " [800] " integer yresolution " [800]
 
-Sampler "halton" "integer pixelsamples" 1
+Sampler "halton" "integer pixelsamples" 64
 Integrator "path" "integer maxdepth" 1
 
 WorldBegin
@@ -22,6 +22,7 @@ AttributeEnd
 AttributeBegin
 Material "metal"
 Shape "sphere" "float radius" 1
+AttributeEnd
 
 AttributeBegin
 Texture "checks" "spectrum" "checkerboard" 

@@ -301,6 +301,7 @@ CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/ext/glog/src/glog/log_se
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/cone.h
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/cylinder.h
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/disk.h
+CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/displacedsphere.h
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/paraboloid.h
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/sphere.h
 CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o: ../src/shapes/triangle.h

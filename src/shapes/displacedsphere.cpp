@@ -323,7 +323,7 @@ Float DispSphere::SolidAngle(const Point3f &p, int nSamples) const {
     return (2 * Pi * (1 - cosTheta));
 }
 
-std::shared_ptr<Shape> CreateDisplacedSphereShape(const Transform *o2w,
+std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
                                          const Transform *w2o,
                                          bool reverseOrientation,
                                          const ParamSet &params) {

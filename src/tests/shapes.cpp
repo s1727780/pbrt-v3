@@ -9,6 +9,7 @@
 #include "sampling.h"
 #include "shapes/cone.h"
 #include "shapes/cylinder.h"
+#include "shapes/displacedsphere.h"
 #include "shapes/disk.h"
 #include "shapes/paraboloid.h"
 #include "shapes/sphere.h"

@@ -431,9 +431,15 @@ std::vector<std::shared_ptr<Shape>> MakeShapes(const std::string &name,
                                                const ParamSet &paramSet) {
     std::vector<std::shared_ptr<Shape>> shapes;
     std::shared_ptr<Shape> s;
+    
     if (name == "sphere")
         s = CreateSphereShape(object2world, world2object, reverseOrientation,
                               paramSet);
+
+    else if (name == "dsphere")
+        s = CreateDispSphereShape(object2world, world2object, reverseOrientation,
+                              paramSet);
+
     // Create remaining single _Shape_ types
     else if (name == "cylinder")
         s = CreateCylinderShape(object2world, world2object, reverseOrientation,
@@ -528,6 +534,7 @@ std::vector<std::shared_ptr<Shape>> MakeShapes(const std::string &name,
     else if (name == "nurbs")
         shapes = CreateNURBS(object2world, world2object, reverseOrientation,
                              paramSet);
+
     else
         Warning("Shape \"%s\" unknown.", name.c_str());
     return shapes;

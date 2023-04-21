@@ -302,6 +302,7 @@ CMakeFiles/pbrt_test.dir/src/tests/shapes.cpp.o
  ../src/shapes/cone.h
  ../src/shapes/cylinder.h
  ../src/shapes/disk.h
+ ../src/shapes/displacedsphere.h
  ../src/shapes/paraboloid.h
  ../src/shapes/sphere.h
  ../src/shapes/triangle.h

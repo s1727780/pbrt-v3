@@ -566,6 +566,10 @@ shape.h
 shape.h
 ../src/shapes/shape.h
 
+../src/shapes/displacedsphere.h
+shape.h
+../src/shapes/shape.h
+
 ../src/shapes/paraboloid.h
 shape.h
 ../src/shapes/shape.h
@@ -1163,6 +1167,8 @@ shapes/cone.h
 /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/src/tests/shapes/cone.h
 shapes/cylinder.h
 /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/src/tests/shapes/cylinder.h
+shapes/displacedsphere.h
+/mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/src/tests/shapes/displacedsphere.h
 shapes/disk.h
 /mnt/c/Users/mikec/Documents/GitHub/pbrt-v3/src/tests/shapes/disk.h
 shapes/paraboloid.h
