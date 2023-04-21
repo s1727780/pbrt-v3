@@ -331,8 +331,9 @@ std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
     Float zmin = params.FindOneFloat("zmin", -radius);
     Float zmax = params.FindOneFloat("zmax", radius);
     Float phimax = params.FindOneFloat("phimax", 360.f);
+    Float maxdispl = params.FindOneFloat("maxdispl", 1.f);
     return std::make_shared<DispSphere>(o2w, w2o, reverseOrientation, radius, zmin,
-                                    zmax, phimax);
+                                    zmax, phimax, maxdispl);
 }
 
 }  // namespace pbrt
