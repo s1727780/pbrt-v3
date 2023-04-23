@@ -21,7 +21,7 @@ AttributeEnd
 
 AttributeBegin
 Material "metal"
-Shape "dsphere" "float radius" 1 "float maxdispl" 0.1
+Shape "dsphere" "float radius" 1 "float displ" 0.1 "string displacementmap" "dmap2.ppm"
 AttributeEnd
 
 AttributeBegin
