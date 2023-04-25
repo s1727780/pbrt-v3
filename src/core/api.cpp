@@ -1197,6 +1197,7 @@ void pbrtTransformEnd() {
 void pbrtTexture(const std::string &name, const std::string &type,
                  const std::string &texname, const ParamSet &params) {
     VERIFY_WORLD("Texture");
+    //std::cout<<name<<std::endl;
     if (PbrtOptions.cat || PbrtOptions.toPly) {
         printf("%*sTexture \"%s\" \"%s\" \"%s\" ", catIndentCount, "",
                name.c_str(), type.c_str(), texname.c_str());

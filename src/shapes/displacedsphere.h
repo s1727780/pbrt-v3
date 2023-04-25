@@ -40,6 +40,7 @@
 
 // shapes/sphere.h*
 #include "shape.h"
+#include "textures/imagemap.h"
 
 namespace pbrt {
 
@@ -57,7 +58,16 @@ class DispSphere : public Shape {
           thetaMin(std::acos(Clamp(std::min(zMin, zMax) / radius, -1, 1))),
           thetaMax(std::acos(Clamp(std::max(zMin, zMax) / radius, -1, 1))),
           phiMax(Radians(Clamp(phiMax, 0, 360))),
-          maxdispl(maxdispl) {}
+          maxdispl(maxdispl),
+          dispRadius(radius * (1+maxdispl))  {
+
+            generateDispMap();
+
+
+
+          }
+
+
     Bounds3f ObjectBound() const;
     bool Intersect(const Ray &ray, Float *tHit, SurfaceInteraction *isect,
                    bool testAlphaTexture) const;
@@ -75,8 +85,22 @@ class DispSphere : public Shape {
     const Float zMin, zMax;
     const Float thetaMin, thetaMax, phiMax;
     const Float maxdispl;
-};
 
+    const Float dispRadius;
+    const int parallaxLayers = 10;
+    //Texture<Float> *tex = nullptr;
+
+
+    void generateDispMap();
+
+    bool hasIntersectedSphere(const Ray &ray, Float *tHit, SurfaceInteraction *isect,
+                   bool testAlphaTexture, Float rad) const;
+
+    
+
+
+};
+// Only supports positive 
 std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
                                          const Transform *w2o,
                                          bool reverseOrientation,
