@@ -20,6 +20,13 @@ LightSource "point" "color I" [10 10 10]
 AttributeEnd
 
 AttributeBegin
+Texture "mydiffuse" "spectrum" "imagemap" "string filename" "dmap.jpg"
+Material "matte" "texture Kd" "mydiffuse"
+Translate 0 0 -2
+Shape "sphere" "float radius" 1
+AttributeEnd
+
+AttributeBegin
 Material "metal"
 Shape "dsphere" "float radius" 1 "float displ" 0.1 "string displacementmap" "dmap2.ppm"
 AttributeEnd

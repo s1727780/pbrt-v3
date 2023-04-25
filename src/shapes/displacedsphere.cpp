@@ -252,15 +252,21 @@ void DispSphere::generateDispMap(){
     // Get map dimensions
 
 
+
     // Assign values
 
     // d(u,v) = (y/2)(1 + cos(a pi u) * sin(b pi v))
-    Texture<Float> tex = CreateImageFloatTexture()
+    //Texture<Float> tex = CreateImageFloatTexture()
     
-        alpha = 50;
-        beta = 25;
+    float alpha, beta, u, v, displacement;
 
-        displacement = (maxdispl / 2)*(1 + (cos(alpha * Pi * u) * sin(beta * Pi * v)));
+    alpha = 50;
+    beta = 25;
+    u = 0;
+    v = 0;
+    
+
+    displacement = (maxdispl / 2)*(1 + (cos(alpha * Pi * u) * sin(beta * Pi * v)));
 
 }
 
