@@ -56,10 +56,9 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
     bool hitDispRadius = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, dispRadius);
     if (!hitDispRadius) return false;
 
-    // Check intersect at radius
-    else (hitDispRadius){
 
-        // Has the ray hit the sphere
+    else {
+
         bool hit;
         Point2f pos2f;
         Point3f normal;
@@ -67,11 +66,8 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
         Float disp;
         int pos;
 
-
-
         // Parallax Mapping Algorithm
-
-        for (int layer = parallaxLayers; layer > 0; layer--){
+        for (int layer = parallaxLayers; layer >= 0; layer--){
 
             parallaxRadius = ((float(layer) / float(parallaxLayers)) * maxdispl) + radius;
             // std::cout<<parallaxRadius<<std::endl;
@@ -97,12 +93,7 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
                 return hit;
             }
         }
-
-        //std::cout<<pos2f<<" : "<<pos<<" : "<<texels[pos][0]<<std::endl;
-
-
-    
-//        return false;
+        return false;    
     }
 
 

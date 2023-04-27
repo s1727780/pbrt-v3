@@ -30,7 +30,7 @@ AttributeEnd
 AttributeBegin
 Material "metal"
 #Shape "dsphere" "float radius" 1 "float displ" 0.5
-Shape "dsphere" "float radius" 1 "float displ" 0.5 "string displacementmap" "dmap.png" "integer layers" 101
+Shape "dsphere" "float radius" 1 "float displ" 0.5 "string displacementmap" "dmap.png" "integer layers" 51
 AttributeEnd
 
 AttributeBegin
