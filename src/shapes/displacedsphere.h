@@ -56,7 +56,7 @@ class DispSphere : public Shape {
     // Sphere Public Methods
     DispSphere(const Transform *ObjectToWorld, const Transform *WorldToObject,
            bool reverseOrientation, Float radius, Float zMin, Float zMax,
-           Float phiMax, Float maxdispl, std::string dmapLoc)
+           Float phiMax, Float maxdispl, std::string dmapLoc, int parallaxLayers)
         : Shape(ObjectToWorld, WorldToObject, reverseOrientation),
           radius(radius),
           zMin(Clamp(std::min(zMin, zMax), -radius, radius)),
@@ -66,11 +66,12 @@ class DispSphere : public Shape {
           phiMax(Radians(Clamp(phiMax, 0, 360))),
           maxdispl(maxdispl),
           dispRadius(radius * (1+maxdispl)),
-          dmapLoc(dmapLoc)  {
+          dmapLoc(dmapLoc),
+          parallaxLayers(parallaxLayers)  {
 
 
             if(dmapLoc == "")
-              generateDispMap(50, 25);
+              generateDispMap();
             else
               loadDispMap();
 
@@ -97,16 +98,17 @@ class DispSphere : public Shape {
     const Float maxdispl;
 
     const Float dispRadius;
-    const int parallaxLayers = 10;
+    int parallaxLayers;
     const std::string dmapLoc;
 
-    // Texture<Float> *tex;
 
-    // RGBSpectrum dmap[];
+    std::unique_ptr<RGBSpectrum[]> texels;
     Point2i resolution;
 
     void loadDispMap();
-    void generateDispMap(Float alpha, Float beta);
+    
+    void generateDispMap();
+    void generateDispMap(int x, int y, Float alpha, Float beta);
 
     bool hasIntersectedSphere(const Ray &ray, Float *tHit, SurfaceInteraction *isect,
                    bool testAlphaTexture, Float rad) const;

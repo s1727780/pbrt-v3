@@ -45,37 +45,69 @@ namespace pbrt {
 
 // Sphere Method Definitions
 Bounds3f DispSphere::ObjectBound() const {
-    return Bounds3f(Point3f(-radius, -radius, zMin),
-                    Point3f(radius, radius, zMax));
+    return Bounds3f(Point3f(-dispRadius, -dispRadius, zMin),
+                    Point3f(dispRadius, dispRadius, zMax));
 }
 
 bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
                        bool testAlphaTexture) const {
-
-    //std::cout<<"Intersect"<<std::endl;
-
-    
     
     // Check intersect at dispRadius
     bool hitDispRadius = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, dispRadius);
-    if (!hitDispRadius){
-        return false;
-    }    
+    if (!hitDispRadius) return false;
 
     // Check intersect at radius
-    bool hitRadius = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, radius);
+    else (hitDispRadius){
 
-    if (hitDispRadius && !hitRadius){
+        // Has the ray hit the sphere
+        bool hit;
+        Point2f pos2f;
+        Point3f normal;
+        float parallaxRadius;
+        Float disp;
+        int pos;
+
+
+
         // Parallax Mapping Algorithm
 
+        for (int layer = parallaxLayers; layer > 0; layer--){
 
-        return false;
+            parallaxRadius = ((float(layer) / float(parallaxLayers)) * maxdispl) + radius;
+            // std::cout<<parallaxRadius<<std::endl;
+
+            hit = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, parallaxRadius);
+
+            pos2f = isect->uv;
+            
+            pos = (float(resolution.y) * float(resolution.y) * pos2f.y) + (float(resolution.x) * pos2f.x);
+            //std::cout<<pos2f<<"||||"<<pos<<std::endl;
+            disp = texels[pos][0];
+
+            // std::cout<<(float(layer) / float(parallaxLayers))<<" |||| "<<disp<<std::endl<<std::endl<<std::endl<<std::endl;
+
+            // if(hit && disp < (float(layer) / float(parallaxLayers))) return true;
+            if(disp > (float(layer) / float(parallaxLayers))) {
+                
+                // Modify normal   
+                
+//                normal = isect->n
+
+
+                return hit;
+            }
+        }
+
+        //std::cout<<pos2f<<" : "<<pos<<" : "<<texels[pos][0]<<std::endl;
+
+
+    
+//        return false;
     }
 
 
-
-    return hitRadius;
-
+    return hasIntersectedSphere(r, tHit, isect, testAlphaTexture, radius);
+//    return false;
 }
 
 // Shadow intersects
@@ -252,9 +284,10 @@ Float DispSphere::SolidAngle(const Point3f &p, int nSamples) const {
 }
 
 void DispSphere::loadDispMap(){
-    std::cout<<"Loading Displacement Map"<<std::endl;
 
-    std::unique_ptr<RGBSpectrum[]> texels = ReadImage(dmapLoc, &resolution);
+
+    texels = ReadImage(dmapLoc, &resolution);
+    // texels = ReadImage(dmapLoc, &resolution);
     if (!texels) {
         Warning("Creating a constant grey texture to replace \"%s\".",
                 dmapLoc.c_str());
@@ -263,52 +296,36 @@ void DispSphere::loadDispMap(){
         *rgb = RGBSpectrum(0.5f);
         texels.reset(rgb);
     }
-    
-    /*
-    MIPMap<Tmemory> *mipmap = nullptr;
-    if (texels) {
-        // Convert texels to type _Tmemory_ and create _MIPMap_
-        std::unique_ptr<Tmemory[]> convertedTexels(
-            new Tmemory[resolution.x * resolution.y]);
-        for (int i = 0; i < resolution.x * resolution.y; ++i)
-            convertIn(texels[i], &convertedTexels[i], 0, 1);
-        mipmap = new MIPMap<Tmemory>(resolution, convertedTexels.get());
-    } else{
-          std::cout<<"Not converter to MIPMAP"<<std::endl;  
-    } 
-    */
 
-    std::cout<<texels[256*5 + 4]<<std::endl;
-//    std::cout<<sizeof(texels[0])<<std::endl;
-
-    std::cout<<resolution<<std::endl;
+    // std::cout<<resolution<<std::endl;
     
     
 }
 
-
-void DispSphere::generateDispMap(Float alpha, Float beta){
+void DispSphere::generateDispMap(){
+    generateDispMap(256,256,50,25);
+}
+void DispSphere::generateDispMap(int x, int y, Float alpha, Float beta){
     // Get map dimensions
     
     std::cout<<"Generating Displacement Map"<<std::endl;
 
-    
-    // Assign values
+
+    resolution = Point2i(x, y);
+
+    // texels = new RGBSpectrum[x * y];
 
     // d(u,v) = (y/2)(1 + cos(a pi u) * sin(b pi v))
     //Texture<Float> tex = CreateImageFloatTexture()
-    
-    float u, v, displacement;
-
-    alpha = 50;
-    beta = 25;
-    u = 0;
-    v = 0;
-    
-
-    displacement = (maxdispl / 2)*(1 + (cos(alpha * Pi * u) * sin(beta * Pi * v)));
-
+    /*
+    for (int v = 0; v < y; v++){
+        for (int u = 0; u < y; u++){
+            texels[v*y + u] = RGBSpectrum((maxdispl / 2)*(1 + (cos(alpha * Pi * u) * sin(beta * Pi * v))));
+        }
+    }
+    */
 }
+
 
 
 bool DispSphere::hasIntersectedSphere(const Ray &r, Float *tHit, SurfaceInteraction *isect,
@@ -434,6 +451,7 @@ std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
     Float phimax = params.FindOneFloat("phimax", 360.f);
     Float maxdispl = params.FindOneFloat("displ", 1.f);
     std::string dmapLoc = params.FindOneString("displacementmap", "");    
+    int parallaxLayers = params.FindOneInt("layers", 11);
     
     std::cout<<dmapLoc<<std::endl;   
 
@@ -442,7 +460,7 @@ std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
     else if(maxdispl < 0){std::cout<<"Does not support negative displacement mapping"<<std::endl;}
 
     return std::make_shared<DispSphere>(o2w, w2o, reverseOrientation, radius, zmin,
-                                    zmax, phimax, maxdispl, dmapLoc);
+                                    zmax, phimax, maxdispl, dmapLoc, parallaxLayers);
 }
 
 }  // namespace pbrt

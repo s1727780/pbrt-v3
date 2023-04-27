@@ -7,7 +7,7 @@ Film "image" "string filename" "shapeshifter.png"
     " integer xresolution " [800] " integer yresolution " [800]
 #    " integer xresolution " [80] " integer yresolution " [80]
 
-Sampler "halton" "integer pixelsamples" 1
+Sampler "halton" "integer pixelsamples" 32
 Integrator "path" "integer maxdepth" 1
 
 WorldBegin
@@ -29,7 +29,8 @@ AttributeEnd
 
 AttributeBegin
 Material "metal"
-Shape "dsphere" "float radius" 1 "float displ" 0.1 "string displacementmap" "dmap.png"
+#Shape "dsphere" "float radius" 1 "float displ" 0.5
+Shape "dsphere" "float radius" 1 "float displ" 0.5 "string displacementmap" "dmap.png" "integer layers" 101
 AttributeEnd
 
 AttributeBegin
