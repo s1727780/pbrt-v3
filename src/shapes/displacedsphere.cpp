@@ -38,6 +38,9 @@
 #include "efloat.h"
 #include "stats.h"
 
+#include "imageio.h"
+#include "stats.h"
+
 namespace pbrt {
 
 // Sphere Method Definitions
@@ -248,17 +251,54 @@ Float DispSphere::SolidAngle(const Point3f &p, int nSamples) const {
     return (2 * Pi * (1 - cosTheta));
 }
 
-void DispSphere::generateDispMap(){
+void DispSphere::loadDispMap(){
+    std::cout<<"Loading Displacement Map"<<std::endl;
+
+    std::unique_ptr<RGBSpectrum[]> texels = ReadImage(dmapLoc, &resolution);
+    if (!texels) {
+        Warning("Creating a constant grey texture to replace \"%s\".",
+                dmapLoc.c_str());
+        resolution.x = resolution.y = 1;
+        RGBSpectrum *rgb = new RGBSpectrum[1];
+        *rgb = RGBSpectrum(0.5f);
+        texels.reset(rgb);
+    }
+    
+    /*
+    MIPMap<Tmemory> *mipmap = nullptr;
+    if (texels) {
+        // Convert texels to type _Tmemory_ and create _MIPMap_
+        std::unique_ptr<Tmemory[]> convertedTexels(
+            new Tmemory[resolution.x * resolution.y]);
+        for (int i = 0; i < resolution.x * resolution.y; ++i)
+            convertIn(texels[i], &convertedTexels[i], 0, 1);
+        mipmap = new MIPMap<Tmemory>(resolution, convertedTexels.get());
+    } else{
+          std::cout<<"Not converter to MIPMAP"<<std::endl;  
+    } 
+    */
+
+    std::cout<<texels[256*5 + 4]<<std::endl;
+//    std::cout<<sizeof(texels[0])<<std::endl;
+
+    std::cout<<resolution<<std::endl;
+    
+    
+}
+
+
+void DispSphere::generateDispMap(Float alpha, Float beta){
     // Get map dimensions
+    
+    std::cout<<"Generating Displacement Map"<<std::endl;
 
-
-
+    
     // Assign values
 
     // d(u,v) = (y/2)(1 + cos(a pi u) * sin(b pi v))
     //Texture<Float> tex = CreateImageFloatTexture()
     
-    float alpha, beta, u, v, displacement;
+    float u, v, displacement;
 
     alpha = 50;
     beta = 25;
@@ -393,16 +433,16 @@ std::shared_ptr<Shape> CreateDispSphereShape(const Transform *o2w,
     Float zmax = params.FindOneFloat("zmax", radius);
     Float phimax = params.FindOneFloat("phimax", 360.f);
     Float maxdispl = params.FindOneFloat("displ", 1.f);
-    //std::string texmap = paramSet.FindOneFilename("displacementmap", "");
-    //std::cout<<texmap<<std::endl;
+    std::string dmapLoc = params.FindOneString("displacementmap", "");    
+    
+    std::cout<<dmapLoc<<std::endl;   
 
-    // TODO: Implement negative maxdispl variable
 
     if(maxdispl == 0){std::cout<<"No displacement"<<std::endl;}
     else if(maxdispl < 0){std::cout<<"Does not support negative displacement mapping"<<std::endl;}
 
     return std::make_shared<DispSphere>(o2w, w2o, reverseOrientation, radius, zmin,
-                                    zmax, phimax, maxdispl);
+                                    zmax, phimax, maxdispl, dmapLoc);
 }
 
 }  // namespace pbrt

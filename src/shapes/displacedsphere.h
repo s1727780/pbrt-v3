@@ -40,7 +40,13 @@
 
 // shapes/sphere.h*
 #include "shape.h"
+
+#include "texture.h"
 #include "textures/imagemap.h"
+#include "mipmap.h"
+#include "paramset.h"
+#include <map>
+
 
 namespace pbrt {
 
@@ -50,7 +56,7 @@ class DispSphere : public Shape {
     // Sphere Public Methods
     DispSphere(const Transform *ObjectToWorld, const Transform *WorldToObject,
            bool reverseOrientation, Float radius, Float zMin, Float zMax,
-           Float phiMax, Float maxdispl)
+           Float phiMax, Float maxdispl, std::string dmapLoc)
         : Shape(ObjectToWorld, WorldToObject, reverseOrientation),
           radius(radius),
           zMin(Clamp(std::min(zMin, zMax), -radius, radius)),
@@ -59,10 +65,14 @@ class DispSphere : public Shape {
           thetaMax(std::acos(Clamp(std::max(zMin, zMax) / radius, -1, 1))),
           phiMax(Radians(Clamp(phiMax, 0, 360))),
           maxdispl(maxdispl),
-          dispRadius(radius * (1+maxdispl))  {
+          dispRadius(radius * (1+maxdispl)),
+          dmapLoc(dmapLoc)  {
 
-            generateDispMap();
 
+            if(dmapLoc == "")
+              generateDispMap(50, 25);
+            else
+              loadDispMap();
 
 
           }
@@ -88,10 +98,15 @@ class DispSphere : public Shape {
 
     const Float dispRadius;
     const int parallaxLayers = 10;
-    //Texture<Float> *tex = nullptr;
+    const std::string dmapLoc;
 
+    // Texture<Float> *tex;
 
-    void generateDispMap();
+    // RGBSpectrum dmap[];
+    Point2i resolution;
+
+    void loadDispMap();
+    void generateDispMap(Float alpha, Float beta);
 
     bool hasIntersectedSphere(const Ray &ray, Float *tHit, SurfaceInteraction *isect,
                    bool testAlphaTexture, Float rad) const;
