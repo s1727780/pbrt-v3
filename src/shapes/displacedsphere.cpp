@@ -56,15 +56,23 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
     bool hitDispRadius = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, dispRadius);
     if (!hitDispRadius) return false;
 
-
     else {
-
         bool hit;
         Point2f pos2f;
-        Point3f normal;
+        Vector3f normal;
         float parallaxRadius;
         Float disp;
         int pos;
+
+        Float disp1, disp2, disp3, disp4;
+        float x, y, du1, dv1;
+        float a, b, val;
+
+        float c, d, duVal, dvVal;
+
+
+        
+
 
         // Parallax Mapping Algorithm
         for (int layer = parallaxLayers; layer >= 0; layer--){
@@ -73,10 +81,10 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
             // std::cout<<parallaxRadius<<std::endl;
 
             hit = hasIntersectedSphere(r, tHit, isect, testAlphaTexture, parallaxRadius);
-
+            if(!hit) return false;
             pos2f = isect->uv;
-            
-            pos = (float(resolution.y) * float(resolution.y) * pos2f.y) + (float(resolution.x) * pos2f.x);
+             
+            pos = int(float(resolution.y) * float(resolution.y) * pos2f.y) + int(float(resolution.x) * pos2f.x);
             //std::cout<<pos2f<<"||||"<<pos<<std::endl;
             disp = texels[pos][0];
 
@@ -89,7 +97,42 @@ bool DispSphere::Intersect(const Ray &r, Float *tHit, SurfaceInteraction *isect,
                 
 //                normal = isect->n
 
+                // Bilinear interpolation to find height at exact hit point
 
+                //normal = isect->n;
+
+                disp1 = texels[pos][0];
+                disp2 = texels[(pos + 1) % totalRes][0];
+                disp3 = texels[(pos + resolution.y) % totalRes][0];
+                disp4 = texels[(pos + resolution.y + 1) % totalRes][0];
+
+                x = pos2f.x * float(resolution.x);
+                y = pos2f.x * float(resolution.x);
+                du1 = x - int(x);
+                dv1 = y - int(y);
+
+                a = disp1 * (1- du1) + disp2 * (du1);
+                b = disp3 * (1- du1) + disp4 * (du1);
+                c = disp1 * (1- dv1) + disp3 * (dv1);
+                d = disp2 * (1- dv1) + disp4 * (dv1);
+                
+                val = a * (1 - dv1) + b * dv1;
+
+                Vector3f dpdu, dpdv;
+                Normal3f dndu, dndv;
+
+                dpdu = Cross(isect->dpdu, Vector3f(du1, 1, 1));
+                dpdv = Cross(isect->dpdv, Vector3f(1, dv1, 1));
+
+
+                dndu = Normal3f(Cross(Vector3f(dndu), Vector3f((val - a) / du1, 1, 1)));
+                dndv = Normal3f(Cross(Vector3f(dndv), Vector3f(1, (val - c) / dv1, 1)));
+
+/*
+                *isect = (*ObjectToWorld)(SurfaceInteraction(isect->p, isect->pError, isect->uv,
+                                            isect->wo, dpdu, dpdv, dndu, dndv,
+                                            isect->time, this));
+*/
                 return hit;
             }
         }
@@ -235,7 +278,8 @@ Interaction DispSphere::Sample(const Interaction &ref, const Point2f &u,
 
     // Compute surface normal and sampled point on sphere
     Vector3f nWorld =
-        SphericalDirection(sinAlpha, cosAlpha, phi, -wcX, -wcY, -wc);
+        SphericalDirection(sinAlpha, cosAlpha, phi, -wcX, -wcY, -wc);    
+
     Point3f pWorld = pCenter + radius * Point3f(nWorld.x, nWorld.y, nWorld.z);
 
     // Return _Interaction_ for sampled point on sphere
@@ -243,6 +287,8 @@ Interaction DispSphere::Sample(const Interaction &ref, const Point2f &u,
     it.p = pWorld;
     it.pError = gamma(5) * Abs((Vector3f)pWorld);
     it.n = Normal3f(nWorld);
+
+    
     if (reverseOrientation) it.n *= -1;
 
     // Uniform cone PDF.
@@ -278,6 +324,7 @@ void DispSphere::loadDispMap(){
 
 
     texels = ReadImage(dmapLoc, &resolution);
+    totalRes = resolution.x * resolution.y;
     // texels = ReadImage(dmapLoc, &resolution);
     if (!texels) {
         Warning("Creating a constant grey texture to replace \"%s\".",
@@ -287,6 +334,14 @@ void DispSphere::loadDispMap(){
         *rgb = RGBSpectrum(0.5f);
         texels.reset(rgb);
     }
+/*
+    std::unique_ptr<TextureMapping2D> map;
+
+    map.reset(new UVMapping2D);
+
+    d = new ImageTexture<Float, Float>(std::move(map), dmapLoc, false, 8.f, ImageWrap::Repeat, 1.f, true);
+*/
+  
 
     // std::cout<<resolution<<std::endl;
     
@@ -303,11 +358,13 @@ void DispSphere::generateDispMap(int x, int y, Float alpha, Float beta){
 
 
     resolution = Point2i(x, y);
+    totalRes = resolution.x * resolution.y;
+    
 
     // texels = new RGBSpectrum[x * y];
 
     // d(u,v) = (y/2)(1 + cos(a pi u) * sin(b pi v))
-    //Texture<Float> tex = CreateImageFloatTexture()
+    // Texture<Float> tex = CreateImageFloatTexture()
     /*
     for (int v = 0; v < y; v++){
         for (int u = 0; u < y; u++){

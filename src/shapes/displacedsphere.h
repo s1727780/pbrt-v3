@@ -69,7 +69,7 @@ class DispSphere : public Shape {
           dmapLoc(dmapLoc),
           parallaxLayers(parallaxLayers)  {
 
-
+            
             if(dmapLoc == "")
               generateDispMap();
             else
@@ -100,10 +100,12 @@ class DispSphere : public Shape {
     const Float dispRadius;
     int parallaxLayers;
     const std::string dmapLoc;
-
+    
 
     std::unique_ptr<RGBSpectrum[]> texels;
+    // ImageTexture<Float, Float> d;
     Point2i resolution;
+    int totalRes;
 
     void loadDispMap();
     
